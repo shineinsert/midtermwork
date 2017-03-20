@@ -1,0 +1,38 @@
+import React, { Component } from 'react';
+import {Link} from 'react-router';
+import logo from './conver.png';
+import './App.css';
+import './bulma.css';
+import {Banner} from './Banner';
+import {About} from './About';
+import {Itim} from './Itim';
+import {Flavor} from './Flavor';
+import {Menubar} from './Menubar';
+import {Foot} from './Foot';
+import {Halfco} from './Halfco';
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+export class Store extends Component {
+  render() {
+    return (
+      <section className="hero is-info is-large">
+    {/* Hero header: will stick at the top */}
+    <div className="hero-head">
+      <Menubar/>
+    </div>
+
+    <div className="hero-body" >
+      <div className="store" style={{marginTop:"-250px"}}>
+      </div>
+
+    <Halfco/>
+    </div>
+  <footer className="footer">
+  <Foot/>
+</footer>
+
+    </section>
+    );
+  }
+}
+
